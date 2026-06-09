@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'LoomitOfferwall'
+  s.name             = 'LoomitOfferwallCore'
   s.version          = '0.3.0-beta.26'
   s.summary          = 'Loomit Offerwall SDK for iOS'
   s.description      = <<-DESC
@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
     works with any Swift/Xcode version.
   DESC
 
-  s.homepage         = 'https://github.com/guidofarji-sketch/loomit-offerwall-ios'
+  s.homepage         = 'https://github.com/guidofarji-sketch/loomit-offerwall-ios-reorganized'
   s.license          = { :type => 'Proprietary', :text => 'Copyright Loomit. All rights reserved.' }
   s.author           = { 'Loomit' => 'support@loomit.com' }
-  s.source           = { :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios-reorganized.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
   s.swift_versions = ['5.0', '5.9', '6.0']
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'Foundation', 'UIKit', 'AdSupport'
 
-  s.vendored_frameworks = 'ios/Frameworks/MyChipsSdk.xcframework'
+  s.vendored_frameworks = 'Frameworks/MyChipsSdk.xcframework'
 
   s.dependency 'TapjoySDK', '~> 14.0'
 
