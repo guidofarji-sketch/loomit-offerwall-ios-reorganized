@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LoomitOfferwall'
-  s.version          = '0.3.0-beta.32'
+  s.version          = '0.3.0-beta.26'
   s.summary          = 'Loomit Offerwall SDK for iOS'
   s.description      = <<-DESC
     Loomit Offerwall SDK provides a unified monetization layer with multi-provider
@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
     works with any Swift/Xcode version.
   DESC
 
-  s.homepage         = 'https://github.com/guidofarji-sketch/loomit-offerwall-ios-reorganized'
+  s.homepage         = 'https://github.com/guidofarji-sketch/loomit-offerwall-ios'
   s.license          = { :type => 'Proprietary', :text => 'Copyright Loomit. All rights reserved.' }
   s.author           = { 'Loomit' => 'support@loomit.com' }
-  s.source           = { :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios-reorganized.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
   s.swift_versions = ['5.0', '5.9', '6.0']
@@ -23,21 +23,20 @@ Pod::Spec.new do |s|
   # Subspec architecture causes duplicate symbols with use_frameworks! :linkage => :static
   # because each subspec that depends on Core embeds Core's symbols independently.
   s.source_files = [
-    'LoomitOfferwallAdapterAPI/Sources/**/*.swift',
-    'LoomitOfferwallCore/Sources/**/*.swift',
-    'LoomitOfferwallDebug/Sources/**/*.swift',
-    'LoomitOfferwallAdapterTapjoy/Sources/**/*.swift',
-    'LoomitOfferwallAdapterMyChips/Sources/**/*.swift'
+    'Sources/LoomitOfferwallAdapterAPI/**/*.swift',
+    'Sources/LoomitOfferwallCore/**/*.swift',
+    'Sources/LoomitOfferwallDebug/**/*.swift',
+    'Sources/LoomitOfferwallAdapterTapjoy/**/*.swift',
+    'Sources/LoomitOfferwallAdapterMyChips/**/*.swift'
   ]
 
   s.resource_bundles = {
-    'LoomitOfferwallCore' => ['LoomitOfferwallCore/Resources/**/*']
+    'LoomitOfferwallCore' => ['Resources/**/*']
   }
 
   s.frameworks = 'Foundation', 'UIKit', 'AdSupport'
 
-  # MyChips SDK vendored xcframework (ruta desde raíz del repo)
-  s.vendored_frameworks = 'Frameworks/MyChipsSdk.xcframework'
+  s.vendored_frameworks = 'ios/Frameworks/MyChipsSdk.xcframework'
 
   s.dependency 'TapjoySDK', '~> 14.0'
 
