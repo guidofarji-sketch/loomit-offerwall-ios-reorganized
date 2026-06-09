@@ -1,0 +1,42 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.resolved
+Packages/
+
+# macOS
+.DS_Store
+
+# Pods (if any adapter ever uses CocoaPods)
+Pods/
+Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Distribution artifacts
+dist/
+*.xcframework.zip
+
+# verify.sh artifacts
+build_logs/
+
+# Editor
+*.swp
+.idea/
+
+# Coverage
+*.xcresult/
+coverage/

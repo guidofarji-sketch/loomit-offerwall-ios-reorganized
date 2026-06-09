@@ -1,0 +1,141 @@
+{
+  "configurations": [],
+  "ab_tests": [],
+  "ab_test": {
+    "experiment_name": "Emergency Fallback",
+    "group": "control",
+    "experiment_id": "emergency-fallback"
+  },
+  "experiments": [],
+  "segment": {
+    "id": "emergency",
+    "name": "Emergency Segment"
+  },
+  "logging": {
+    "enabled": true,
+    "sampling_rate": 0.1,
+    "categories": {
+      "provider_init_failures": {
+        "enabled": true,
+        "max_per_hour": 50
+      },
+      "provider_failovers": {
+        "enabled": true,
+        "max_per_hour": 20
+      },
+      "content_show_failures": {
+        "enabled": true,
+        "max_per_hour": 30
+      },
+      "lifecycle_sequencing": {
+        "enabled": true,
+        "max_per_hour": 10
+      },
+      "provider_performance": {
+        "enabled": true,
+        "max_per_hour": 100
+      },
+      "compatibility_matrix": {
+        "enabled": true,
+        "max_per_hour": 10
+      },
+      "event_tracking_health": {
+        "enabled": true,
+        "max_per_hour": 50
+      },
+      "pusher_infrastructure": {
+        "enabled": true,
+        "max_per_hour": 20
+      },
+      "lifecycle_diagnostic": {
+        "enabled": true,
+        "max_per_hour": 10
+      }
+    }
+  },
+  "resilience": {
+    "backend_circuit_breaker": {
+      "failure_threshold": 5,
+      "success_threshold": 2,
+      "open_duration_ms": 60000
+    },
+    "event_pusher_circuit_breaker": {
+      "failure_threshold": 3,
+      "success_threshold": 2,
+      "open_duration_ms": 30000
+    },
+    "provider_init_policies": {
+      "TAPJOY": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      },
+      "DT": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      },
+      "AYET": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      },
+      "PLAYTIME": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      },
+      "TYRADS": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      },
+      "XSOLLA": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      },
+      "MYCHIPS": {
+        "timeout_ms": 45000,
+        "max_retries": 3
+      }
+    },
+    "config_fetch_policy": {
+      "network_timeout_ms": 10000,
+      "cache_fresh_threshold_ms": 86400000,
+      "cache_stale_threshold_ms": 604800000
+    },
+    "event_push_policy": {
+      "max_queue_size": 1000,
+      "flush_interval_ms": 15000,
+      "retry_policy": {
+        "initial_delay_ms": 500,
+        "max_delay_ms": 5000,
+        "max_retries": 3
+      }
+    }
+  },
+  "debugging": {
+    "enabled": false,
+    "network_inspection": false,
+    "log_level": "error"
+  },
+  "privacy": {
+    "default_consent": {
+      "tcf_consent_string": null,
+      "us_privacy_string": null,
+      "subject_to_gdpr": null
+    },
+    "fallback_regions": {
+      "gdpr_applicable": ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "GB", "UK"],
+      "ccpa_applicable": ["US"]
+    }
+  },
+  "network": {
+    "default_hosts": [
+      "gateway.offerwall.unity3d.com",
+      "gateway-a.offerwall.unity3d.com",
+      "content.offerwall.unity3d.com"
+    ],
+    "timeout_ms": 10000,
+    "retry_policy": {
+      "max_retries": 3,
+      "initial_delay_ms": 1000,
+      "max_delay_ms": 5000
+    }
+  }
+}

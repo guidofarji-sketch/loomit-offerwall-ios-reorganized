@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		318C95986E7281E29E126952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9649035C7B82D6F0EDB45 /* AppDelegate.swift */; };
+		5C248B28DE9DCDEE9B79F264 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EABCB59FFA020F8A198C6 /* SceneDelegate.swift */; };
+		62504B72B017E97E650D693E /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B1805809BC34A5C49BA0A4 /* DebugViewController.swift */; };
+		738D0FE0CC3861FEA022FBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61EEF3DE6F3DB8A5F079CE98 /* LaunchScreen.storyboard */; };
+		A148B6CA15AD342E7FF0626A /* CustomPropertiesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F8C2887B1F9F0540B56CF /* CustomPropertiesStore.swift */; };
+		BDC6EC7D2397ECF7C3A26FD0 /* SampleCustomPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C89B51D65BE78928E7BB28 /* SampleCustomPropertiesViewController.swift */; };
+		EC5948396033D571E73EB243 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CB9474755B0B13EDD7B69A /* MainViewController.swift */; };
+		F8017FF4DDAA76E667FD9281 /* Pods_LoomitOfferwallSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEB90A3133CF908F1149E0B /* Pods_LoomitOfferwallSampleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24CB9474755B0B13EDD7B69A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2D7EABCB59FFA020F8A198C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61EEF3DE6F3DB8A5F079CE98 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66D40A5F637731C3D65A8AD2 /* LoomitOfferwallSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoomitOfferwallSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB0B143709E1FAA93FA57B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8CEB90A3133CF908F1149E0B /* Pods_LoomitOfferwallSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoomitOfferwallSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B1805809BC34A5C49BA0A4 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		A0AF15A234F0D1ED102F4CF5 /* Pods-LoomitOfferwallSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoomitOfferwallSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-LoomitOfferwallSampleApp/Pods-LoomitOfferwallSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AA2997550B67986758D0A8D5 /* Pods-LoomitOfferwallSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoomitOfferwallSampleApp.release.xcconfig"; path = "Target Support Files/Pods-LoomitOfferwallSampleApp/Pods-LoomitOfferwallSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		B1C89B51D65BE78928E7BB28 /* SampleCustomPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCustomPropertiesViewController.swift; sourceTree = "<group>"; };
+		E11F8C2887B1F9F0540B56CF /* CustomPropertiesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPropertiesStore.swift; sourceTree = "<group>"; };
+		EFE9649035C7B82D6F0EDB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EC42B4F366C75444DF3B387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8017FF4DDAA76E667FD9281 /* Pods_LoomitOfferwallSampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3679C0CF3C784D5A0FD96835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CEB90A3133CF908F1149E0B /* Pods_LoomitOfferwallSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FC44D94895172CC2DF248C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66D40A5F637731C3D65A8AD2 /* LoomitOfferwallSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C93023AF2C3719659C676A45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF15A234F0D1ED102F4CF5 /* Pods-LoomitOfferwallSampleApp.debug.xcconfig */,
+				AA2997550B67986758D0A8D5 /* Pods-LoomitOfferwallSampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD758D4B509CD428A2A0E95C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFE9649035C7B82D6F0EDB45 /* AppDelegate.swift */,
+				E11F8C2887B1F9F0540B56CF /* CustomPropertiesStore.swift */,
+				90B1805809BC34A5C49BA0A4 /* DebugViewController.swift */,
+				7EB0B143709E1FAA93FA57B0 /* Info.plist */,
+				61EEF3DE6F3DB8A5F079CE98 /* LaunchScreen.storyboard */,
+				24CB9474755B0B13EDD7B69A /* MainViewController.swift */,
+				B1C89B51D65BE78928E7BB28 /* SampleCustomPropertiesViewController.swift */,
+				2D7EABCB59FFA020F8A198C6 /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EEFDC2F9E3DF529D12FF63C2 = {
+			isa = PBXGroup;
+			children = (
+				DD758D4B509CD428A2A0E95C /* Sources */,
+				A6FC44D94895172CC2DF248C /* Products */,
+				C93023AF2C3719659C676A45 /* Pods */,
+				3679C0CF3C784D5A0FD96835 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79982F25F475542DA13762D9 /* LoomitOfferwallSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5B15A8BC13CCF4F4F2FB0E2 /* Build configuration list for PBXNativeTarget "LoomitOfferwallSampleApp" */;
+			buildPhases = (
+				D5D553206364CF4358228777 /* [CP] Check Pods Manifest.lock */,
+				24855DB6F9C961BF42CE9108 /* Sources */,
+				80064B488FD3D90D99025335 /* Load Environment Variables */,
+				35E74AA1C0D35FF3D55B2E1B /* Resources */,
+				9EC42B4F366C75444DF3B387 /* Frameworks */,
+				C36C92191ED7D33C4662DD55 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoomitOfferwallSampleApp;
+			productName = LoomitOfferwallSampleApp;
+			productReference = 66D40A5F637731C3D65A8AD2 /* LoomitOfferwallSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB0C2E70256AE9F77AD25C37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = EAAD633E0C669686C7BE9993 /* Build configuration list for PBXProject "LoomitOfferwallSampleApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EEFDC2F9E3DF529D12FF63C2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A6FC44D94895172CC2DF248C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79982F25F475542DA13762D9 /* LoomitOfferwallSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35E74AA1C0D35FF3D55B2E1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738D0FE0CC3861FEA022FBCD /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80064B488FD3D90D99025335 /* Load Environment Variables */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Load Environment Variables";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${PROJECT_DIR}/.env\" ]; then\n  export $(cat \"${PROJECT_DIR}/.env\" | grep -v '^#' | xargs)\nfi\n";
+		};
+		C36C92191ED7D33C4662DD55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoomitOfferwallSampleApp/Pods-LoomitOfferwallSampleApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoomitOfferwallSampleApp/Pods-LoomitOfferwallSampleApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoomitOfferwallSampleApp/Pods-LoomitOfferwallSampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D553206364CF4358228777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoomitOfferwallSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24855DB6F9C961BF42CE9108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318C95986E7281E29E126952 /* AppDelegate.swift in Sources */,
+				A148B6CA15AD342E7FF0626A /* CustomPropertiesStore.swift in Sources */,
+				62504B72B017E97E650D693E /* DebugViewController.swift in Sources */,
+				EC5948396033D571E73EB243 /* MainViewController.swift in Sources */,
+				BDC6EC7D2397ECF7C3A26FD0 /* SampleCustomPropertiesViewController.swift in Sources */,
+				5C248B28DE9DCDEE9B79F264 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1AF258C6ACB4EB512F1014C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AF15A234F0D1ED102F4CF5 /* Pods-LoomitOfferwallSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93855QKA66;
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.loomit.sampleapp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31A1105FAF3F394981AB2E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		45D7FE57296BA32DBFFB5935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2997550B67986758D0A8D5 /* Pods-LoomitOfferwallSampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93855QKA66;
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.loomit.sampleapp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F455E21F04C2AFE93D55C88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5B15A8BC13CCF4F4F2FB0E2 /* Build configuration list for PBXNativeTarget "LoomitOfferwallSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF258C6ACB4EB512F1014C5 /* Debug */,
+				45D7FE57296BA32DBFFB5935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EAAD633E0C669686C7BE9993 /* Build configuration list for PBXProject "LoomitOfferwallSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A1105FAF3F394981AB2E38 /* Debug */,
+				F455E21F04C2AFE93D55C88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB0C2E70256AE9F77AD25C37 /* Project object */;
+}

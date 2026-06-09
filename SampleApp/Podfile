@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'LoomitOfferwallSampleApp' do
+  # Static frameworks (.framework with .a inside) allow Swift modules
+  # and can depend on static binaries like Tapjoy
+  use_frameworks! :linkage => :static
+
+  # Loomit Offerwall SDK - separate pods for modular selection
+  pod 'LoomitOfferwallCore',         :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => '0.3.0-beta.32'
+  pod 'LoomitOfferwallAdapterAPI',   :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => '0.3.0-beta.32'
+  pod 'LoomitOfferwallAdapterMyChips', :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => '0.3.0-beta.32'
+  pod 'LoomitOfferwallAdapterTapjoy',  :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => '0.3.0-beta.32'
+  pod 'LoomitOfferwallDebug',        :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios.git', :tag => '0.3.0-beta.32'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+      # Fix: Xcode 26+ "Explicit Module Builds" breaks CocoaPods Swift module discovery
+      config.build_settings['SWIFT_ENABLE_EXPLICIT_MODULES'] = 'NO'
+    end
+  end
+end

@@ -1,0 +1,34 @@
+name: LoomitOfferwallSampleApp
+options:
+  bundleIdPrefix: com.loomit
+  deploymentTarget:
+    iOS: "15.0"
+  createGroups: true
+targets:
+  LoomitOfferwallSampleApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - Sources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.loomit.sampleapp
+      INFOPLIST_FILE: Sources/Info.plist
+    scheme:
+      config: Debug
+      run:
+        config: Debug
+      testTargets: []
+      archive:
+        config: Release
+      profile:
+        config: Release
+      analyze:
+        config: Debug
+    postCompileScripts:
+      - script: |
+          if [ -f "${PROJECT_DIR}/.env" ]; then
+            export $(cat "${PROJECT_DIR}/.env" | grep -v '^#' | xargs)
+          fi
+        name: Load Environment Variables
+        basedOnDependencyAnalysis: false
