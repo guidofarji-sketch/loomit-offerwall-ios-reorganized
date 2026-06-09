@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'LoomitOfferwallDebug'
-  s.version          = '0.3.0-beta.26'
+  s.version          = '0.3.0-beta.33'
   s.summary          = 'Loomit Offerwall Debug Suite for iOS'
   s.description      = <<-DESC
     Debug suite for Loomit Offerwall SDK iOS.
     Provides real-time event tracking and debug panel.
   DESC
 
-  s.homepage         = 'https://github.com/guidofarji-sketch/loomit-offerwall-ios'
+  s.homepage         = 'https://github.com/guidofarji-sketch/loomit-offerwall-ios-reorganized'
   s.license          = { :type => 'Proprietary', :text => 'Copyright Loomit. All rights reserved.' }
   s.author           = { 'Loomit' => 'support@loomit.com' }
 
@@ -16,9 +16,14 @@ Pod::Spec.new do |s|
 
   s.source           = { :git => 'https://github.com/guidofarji-sketch/loomit-offerwall-ios-reorganized.git', :tag => s.version.to_s }
 
-  s.source_files = 'Sources/LoomitOfferwallDebug/**/*.swift'
+  s.source_files = 'LoomitOfferwallDebug/Sources/**/*.swift'
 
   s.dependency 'LoomitOfferwallCore', '~> 0.3.0-beta'
 
   s.static_framework = true
+
+  s.pod_target_xcconfig = {
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
+    'SWIFT_VERSION' => '5.0'
+  }
 end

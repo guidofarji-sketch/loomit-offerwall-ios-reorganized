@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LoomitOfferwallCore'
-  s.version          = '0.3.0-beta.26'
+  s.version          = '0.3.0-beta.33'
   s.summary          = 'Loomit Offerwall SDK for iOS'
   s.description      = <<-DESC
     Loomit Offerwall SDK provides a unified monetization layer with multi-provider
@@ -23,15 +23,15 @@ Pod::Spec.new do |s|
   # Subspec architecture causes duplicate symbols with use_frameworks! :linkage => :static
   # because each subspec that depends on Core embeds Core's symbols independently.
   s.source_files = [
-    'Sources/LoomitOfferwallAdapterAPI/**/*.swift',
-    'Sources/LoomitOfferwallCore/**/*.swift',
-    'Sources/LoomitOfferwallDebug/**/*.swift',
-    'Sources/LoomitOfferwallAdapterTapjoy/**/*.swift',
-    'Sources/LoomitOfferwallAdapterMyChips/**/*.swift'
+    'LoomitOfferwallAdapterAPI/Sources/**/*.swift',
+    'LoomitOfferwallCore/Sources/**/*.swift',
+    'LoomitOfferwallDebug/Sources/**/*.swift',
+    'LoomitOfferwallAdapterTapjoy/Sources/**/*.swift',
+    'LoomitOfferwallAdapterMyChips/Sources/**/*.swift'
   ]
 
   s.resource_bundles = {
-    'LoomitOfferwallCore' => ['Resources/**/*']
+    'LoomitOfferwallCore' => ['LoomitOfferwallCore/Resources/**/*']
   }
 
   s.frameworks = 'Foundation', 'UIKit', 'AdSupport'
