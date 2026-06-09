@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'Foundation', 'UIKit', 'AdSupport'
 
-  s.vendored_frameworks = 'Frameworks/MyChipsSdk.xcframework'
+  s.vendored_frameworks = 'ios/Frameworks/MyChipsSdk.xcframework'
 
   s.dependency 'TapjoySDK', '~> 14.0'
 
