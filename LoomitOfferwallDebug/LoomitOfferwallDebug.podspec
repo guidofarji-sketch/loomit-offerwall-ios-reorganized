@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LoomitOfferwallDebug'
-  s.version          = '0.3.0-beta.33'
+  s.version          = '0.3.0-beta.34'
   s.summary          = 'Loomit Offerwall Debug Suite for iOS'
   s.description      = <<-DESC
     Debug suite for Loomit Offerwall SDK iOS.
@@ -18,12 +18,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LoomitOfferwallDebug/Sources/**/*.swift'
 
-  s.dependency 'LoomitOfferwallCore', '~> 0.3.0-beta'
-
   s.static_framework = true
-
-  s.pod_target_xcconfig = {
-    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-    'SWIFT_VERSION' => '5.0'
-  }
 end

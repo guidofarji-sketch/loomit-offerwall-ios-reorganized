@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LoomitOfferwallAdapterMyChips'
-  s.version          = '0.3.0-beta.33'
+  s.version          = '0.3.0-beta.34'
   s.summary          = 'Loomit Offerwall Adapter for MyChips/MAF'
   s.description      = <<-DESC
     MyChips/MAF offerwall adapter for Loomit Offerwall SDK iOS.
@@ -18,14 +18,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LoomitOfferwallAdapterMyChips/Sources/**/*.swift'
 
-  s.dependency 'LoomitOfferwallCore', '~> 0.3.0-beta'
-
-  s.vendored_frameworks = 'Frameworks/MyChipsSdk.xcframework'
+  s.dependency 'LoomitOfferwallAdapterAPI', '~> 0.3.0-beta'
+  s.dependency 'MyChipsSdk', '~> 1.1.0'
 
   s.static_framework = true
-
-  s.pod_target_xcconfig = {
-    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-    'SWIFT_VERSION' => '5.0'
-  }
 end
